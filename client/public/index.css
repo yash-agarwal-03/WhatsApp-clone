@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2f2f2f;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+.AppBar{
+  background-color: #1d1d1c;
+  height: 100%;
+  width: 100vw;
+  font-size:3rem;
+  color: #2dc653;
+  margin: 0;
+
+  /* justify-content: center; */
+}
+.AppBar .content{
+  position: relative;
+  left:5rem;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  width: 500px;
+}
+.AppBar p{
+  width: max-content;
+}
+
+.AppBar .wtspicon{
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 70px;
+  aspect-ratio: 1/1;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+.DialogBox{
+  color: #e4e4e4;
+    z-index: 1;
+    height: 75vh;
+    max-width: 80vw;
+    background-color: #212120;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* align-content: center;
+    text-align: center; */
+    font-size: 32px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+
+    padding: 1rem;
+
+  }
+
+.DialogContentBox{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.DialogContentBox p{
+  margin:2rem ;
+  width: 100%;
+}
+.dialogList li{
+  font-size: 1.5rem;
+  margin: 1rem;
+  align-items: center;
+}
+.dialogList{
+  width: 40rem;
+}
+.mailLogin{
+  width: fit-content;
+  color: #2dc653;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.backBtn{
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #2dc653;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.backBtn:hover{
+  box-shadow:0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.DialogBtn{
+  display: block;
+  background-color: #005d4b;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  /* height: 3rem; */
+  padding: 1rem;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+.DialogBtn:hover{
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.signin{
+  margin: 10px;
+  width: 100px;
+}
+.signin:hover{
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.LoginQR{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mailLogin{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+.invis{
+  display: none;
+}
+.chatDialogBox{
+  z-index: 1;
+  height: 87vh;
+  width: 93vw;
+  background-color: white;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* align-content: center;
+    text-align: center; */
+  font-size: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+
+  padding: 1rem;
+}
+.chatPage{
+  background-color: #212120;
+  height: 100vh;
+  color: #f6f6f7;
+}
+.chatDialogBox{
+  display: flex;
+  background-color: #212120;
+  font-size: 1.5rem;
+  
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+.inbox-box{
+  background-color: #272726;
+  height: 100%;
+  width: 35%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: justify;
+  font-size: 2rem;
+}
+.inbox-box header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 5px;
+}
+.headerMenu{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+position: absolute;
+width: 25%;
+right: 2%;
+}
+.profileicon {
+  height: 3rem;
+  aspect-ratio: 1/1;
+  background-color: #61c87b74;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.inbox-box::-webkit-scrollbar {
+  width: 15px;
+  background-color: #212120;
+}
+
+.inbox-box::-webkit-scrollbar-thumb {
+  background-color: #818B99;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
+.inbox-box::-webkit-scrollbar-thumb:hover {
+  transition: 1s;
+  border: 4px solid transparent;
+  /* width: 20px; */
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+.msgbox{
+  background-color: #2c2c2c;
+  height: 100%;
+  width: 65%;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msgbox::-webkit-scrollbar{
+  display: none;
+}
+.msgbox p{
+  width: 20rem;
+  text-align: center;
+}
+
